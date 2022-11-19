@@ -1,0 +1,49 @@
+type Feedback @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  type: String!
+  message: String
+  sub: String
+}
+
+type Block @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  by: String!
+  to: String!
+}
+
+type ChatUsers @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  from: String!
+  to: String!
+  message: String!
+}
+
+type ChatData @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  from: String!
+  to: String!
+  message: String!
+}
+
+type Matches @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  user1: String!
+  user2: String!
+}
+
+type WaitlingList @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  user1: String!
+  user2: String!
+}
+
+type User @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String!
+  age: String!
+  bio: String!
+  gender: String!
+  sub: String!
+  image: String!
+}
+ 

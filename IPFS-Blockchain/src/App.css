@@ -1,0 +1,23 @@
+*{
+    text-align: center;
+    padding-top: 13px;
+}
+.spinner-loading {
+    border: 11px solid rgb(35, 51, 127);
+    border-right-color: transparent;
+    border-radius: 51%;
+    width: 321px;
+    height: 321px;
+    position: absolute;
+    top: 51%;
+    left: 51%;
+    transform: translate(-51%, -51%);
+    animation: spin 3s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {opacity: 2;}
+    50% {opacity: 2;}
+    100% {opacity: 2;transform: translate(-51%, -51%) rotate(1turn);}
+  }
+ 
